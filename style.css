@@ -1,0 +1,181 @@
+html,
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    margin: 5vw;
+    font-size: 14px;
+    color: #464646;
+}
+
+section {
+    padding: 25px 15px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+section h1 {
+    padding-top: 4px;
+    padding-bottom: 8px;
+}
+
+section p {
+    padding-bottom: 6px;
+    font-size: 14px;
+}
+
+.table {
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table thead tr th {
+    border: none;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    background-color: #f5f5f5;
+    color: rgb(107, 114, 128);
+    font-weight: normal;
+    font-weight: bold;
+    padding: 12px;
+    font-size: 12px;
+}
+
+.table thead tr th:first-child {
+    border-top-left-radius: 5px;
+}
+
+.table thead tr th:last-child {
+    border-top-right-radius: 5px;
+}
+
+.table thead tr th a:hover {
+    color: #323232;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.table tbody {
+    color: #3c3c3c;
+}
+
+.table tbody tr {
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.table tbody tr:nth-of-type(odd) {
+    background-color: white;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(150, 200, 255, 0.1);
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+input {
+    border-radius: 5px;
+    margin-right: 2px;
+    border: 1.6px solid #a0a0a0;
+}
+
+select {
+    border-radius: 5px;
+    border: 1.6px solid #a0a0a0;
+}
+
+.dataTable-wrapper.no-footer .dataTable-container {
+    border: none;
+}
+
+.dataTable-pagination ul .active a {
+    background-color: #ebebeb;
+}
+
+.dataTable-pagination ul .active a:hover {
+    background-color: #ebebeb;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.dataTable-pagination ul a {
+    border-radius: 5px;
+}
+
+.dataTable-pagination ul a:hover {
+    background-color: #f5f5f5;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+
+/* Select with checkbox */
+.container-select{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.multiple-selection {
+    width: auto;
+    background-color: #ffffff;
+}
+
+.selectBox {
+    position: relative;
+}
+
+.selectBox select {
+    width: 100%;
+    padding: 6px;
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.check-boxes {
+    display: none;
+    position: absolute;
+    width: auto;
+    z-index: 9999;
+    background: white;
+    padding: 5px 0;
+    border-radius: 4px;
+    border: thin solid rgb(219, 219, 219);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.check-boxes label {
+    display: block;
+    padding-right: 9px;
+    padding-left: 6px;
+}
+
+.check-boxes label:hover {
+    background-color: #3665ff;
+    color: white;
+}
+
+.dataTable-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dataTable-top::after, .dataTable-bottom::after {
+	content: none;
+}

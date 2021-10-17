@@ -29,6 +29,32 @@ section p {
     font-size: 14px;
 }
 
+.table-container {
+    overflow-x: auto;
+    padding: 15px 0;
+}
+
+/* Scroll small screens */
+.table-container::-webkit-scrollbar {
+    height: 6px;
+}
+
+.table-container::-webkit-scrollbar-track {
+    background: rgb(221, 221, 221);
+    /* color of the tracking area */
+    border-radius: 10px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background-color: gray;
+    /* color of the scroll thumb */
+    border-radius: 10px;
+    /* roundness of the scroll thumb */
+    border: 1px solid rgb(92, 92, 92);
+    /* creates padding around scroll thumb */
+}
+
+
 .table {
     border-radius: 5px;
     background-color: #f7f7f7;
@@ -36,6 +62,7 @@ section p {
     width: 99%;
     margin-left: auto;
     margin-right: auto;
+    padding: 15px 0;
 }
 
 .table thead tr th {
@@ -52,6 +79,7 @@ section p {
 
 .table thead tr th:first-child {
     border-top-left-radius: 5px;
+
 }
 
 .table thead tr th:last-child {
@@ -120,7 +148,7 @@ select {
 
 
 /* Select with checkbox */
-.container-select{
+.container-select {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -137,6 +165,7 @@ select {
 
 .selectBox select {
     width: 100%;
+    min-width: 110px;
     padding: 6px;
 }
 
@@ -176,6 +205,11 @@ select {
     justify-content: space-between;
 }
 
-.dataTable-top::after, .dataTable-bottom::after {
-	content: none;
+.dataTable-top::after,
+.dataTable-bottom::after {
+    content: none;
+}
+
+.dataTable-wrapper {
+    min-width: 700px;
 }

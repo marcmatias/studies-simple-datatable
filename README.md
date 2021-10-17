@@ -1,4 +1,4 @@
-# Simple-Datatable Eemplo
+# Simple-Datatable Exemplo
 
 ## Como é feito:
 
